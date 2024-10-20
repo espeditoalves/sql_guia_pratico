@@ -1,0 +1,22 @@
+{
+    "name": "Postgresql Data Science Project",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "python_app",  // O nome do serviço deve ser o nome exato usado no arquivo docker-compose.yml
+    "workspaceFolder": "/app",
+    "settings": {
+      "python.pythonPath": "/root/.local/share/virtualenvs/meu_projeto/bin/python",
+      "python.formatting.provider": "black",  // Exemplo de configuração para formatação
+      "python.linting.enabled": true,
+      "python.linting.pylintEnabled": true
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-toolsai.jupyter",
+      "esbenp.prettier-vscode",  // Para formatação de código
+      "ms-vscode.cpptools"  // Se você usar C/C++ em algum momento
+    ],
+    "postCreateCommand": "poetry install",  // Comando a ser executado após a criação do container
+    "remoteUser": "root"  // Usuário para conectar no container
+  }
+  
+  

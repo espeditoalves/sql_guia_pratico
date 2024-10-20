@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  python_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app  # Mapeia a pasta local para o container
+    ports:
+      - "8888:8888"  # Expondo a porta do Jupyter Notebook
+    depends_on:
+      - postgres_db
+
+  postgres_db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: usuario
+      POSTGRES_PASSWORD: senha
+      POSTGRES_DB: meu_banco
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pg_data:
