@@ -28,7 +28,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 Clone este repositório para o seu ambiente local:
 
 ```bash
-git clone https://github.com/espedito/sql_guia_pratico.git
+git clone https://github.com/espeditoalves/sql_guia_pratico.git
 cd sql_guia_pratico
 ```
 
