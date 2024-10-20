@@ -22,7 +22,7 @@ RUN poetry install --no-dev --no-interaction --no-ansi && \
 COPY . .  
 
 # Registra o kernel do Jupyter
-RUN poetry run python -m ipykernel install --name=meu_projeto --display-name "sql_gui_pratico"
+RUN poetry run python -m ipykernel install --name=meu_projeto --display-name "sql_guia_pratico"
 
 # Exponha a porta padrão do Jupyter Notebook
 EXPOSE 8888

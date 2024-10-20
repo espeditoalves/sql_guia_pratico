@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sql-guia-pratico"
+name = "Projeto_sql-guia-pratico"
 version = "0.1.0"
 description = "Este projeto tem o objetivo de testar alguns códigos sql do livro SQL GUIA PRATICO"
 authors = ["Espedito Ferreira Alves <espeditoalves123@hotmail.com>"]
